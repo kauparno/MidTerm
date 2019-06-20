@@ -15,25 +15,31 @@ import java.util.Scanner;
  */
 public class ArithmeticBase 
 {
- public double x,y;
+ public double x=1;
+ public double y=2;
+ 
     double calculate(double x, double y) 
         {
         Scanner sc =new Scanner(System.in);
-        System.out.println("enter String");
-        String s= sc.next();
-        switch (s.toUpperCase()) 
-        {
-            case "PLUS":
-                return x + y;
-            case "MINUS":
-                return x - y;
-            case "TIMES":
-                return x * y;
-            case "DIVIDE":
-                return x / y;
-            default:
-                throw new AssertionError("Unknown operations " + this);
-        }
+       // System.out.println("enter S");
+       // String s= sc.next();
+        //System.out.println("enter numbers");
+      //  double num = sc.nextDouble();
+ 
+        double PLUS =x +y;
+        System.out.println("PLUS "+ PLUS);
+        
+        double MINUS =x -y;
+        System.out.println("MINUS "+ MINUS);
+        
+         double TIMES =x *y;
+        System.out.println("TIMES "+ TIMES);
+        
+         double DIVIDE =x /y;
+        System.out.println("DIVIDE "+ DIVIDE);
+        return PLUS;
+        
+        
     }
-   
+
 }
